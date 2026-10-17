@@ -1,0 +1,28 @@
+{
+  "number": 39,
+  "wall": "artifacts/gathering/wall-v20.png",
+  "canonical": "artifacts/gathering/wall.png",
+  "wall_sha256": "b03d387ef06b6328d24230299f9b7b08e985018256275222e12624d596befc14",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "RGB PNG",
+  "preview": "dist/gathering/39.jpg",
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "JPEG",
+  "image_tool": "built-in image_gen",
+  "prompt": "Isolated transparent prehistoric pigment: three shallow charcoal bowls in a horizontal row, each with a chalk pebble, joined below by a thin red-ochre cord; rough worn strokes, earth pigments only; no background, hands, writing, logos, frames or modern rendering.",
+  "assembly": "Only the generated pigment was resampled, earth-pigment mapped and composited inside [965,65,175,55] on bare upper-right stone; all other RGB pixels identical.",
+  "visual_review": "Inspected finished full wall. Inherited Pepe retains wide mouth and heavy-lidded eyes. Counted four fingers and one thumb on each of the two inherited hands. New motif has no hands. No writing, signatures, logos, watermarks, frames, real people or prohibited symbols observed.",
+  "visual_requirements_unmet": [],
+  "limitations": [
+    "Local visual inspection is not independent certification.",
+    "The inherited rock retains its original photographic texture.",
+    "Fine pigment detail softens in the 512-pixel JPEG."
+  ],
+  "preview_encoding": "Area-average full wall to 512 square and JPEG quality 70 to fit the source upload budget."
+}

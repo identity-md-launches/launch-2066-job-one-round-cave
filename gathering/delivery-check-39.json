@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "RGB PNG",
+  "png_bytes": 2816875,
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "JPEG",
+  "jpeg_bytes": 64782,
+  "records": 193,
+  "painted": 93,
+  "placeholders": 100,
+  "changed_pixels": 4530,
+  "pixels_changed_outside": 0,
+  "line_files_unchanged": 566,
+  "line_commands": 138,
+  "line_tests": 916,
+  "inherited_fixture_failures": 1,
+  "shared_tests_each": 113,
+  "shared_demos_each": 9,
+  "previews_reencoded": 17,
+  "preview_bytes_saved": 422808,
+  "export": {
+    "source_files": 1136,
+    "tar_gzip_bytes": 8158952,
+    "limit": 8388608,
+    "margin": 229656,
+    "scope": "Local tar.gz trial of all tracked and nonignored new non-artifact source files; scratch excluded; no archive saved. Daemon packaging is external."
+  },
+  "unmet_visual_requirements": []
+}

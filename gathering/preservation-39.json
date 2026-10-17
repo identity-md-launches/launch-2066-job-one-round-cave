@@ -1,0 +1,24 @@
+{
+  "previous_sha256": "6b554a1d93ea98720f3edb5fee7c0fa7cabb97bc76b1519d8a2d34df75eaa406",
+  "wall_sha256": "b03d387ef06b6328d24230299f9b7b08e985018256275222e12624d596befc14",
+  "generated_mark_sha256": "a54f588b6f2abfb70ef32b595a3afc49bdba0f8a0f17b862ca895af027756aea",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "mark_rectangle": [
+    965,
+    65,
+    175,
+    55
+  ],
+  "source_crop": [
+    40,
+    140,
+    2100,
+    440
+  ],
+  "changed_pixels": 4530,
+  "pixels_changed_outside": 0,
+  "method": "Imagegen RGBA pigment resampled and limited to earth pigments, then alpha-composited on bare stone; no intermediate image saved."
+}

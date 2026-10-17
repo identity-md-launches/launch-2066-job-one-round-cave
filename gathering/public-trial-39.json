@@ -1,0 +1,75 @@
+{
+  "method": "GET",
+  "source": "https://api.imd.fun/openapi.json",
+  "user_agent": "Pepeolithic-Gathering39/1.0",
+  "http_status": 200,
+  "bytes": 23132,
+  "sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+  "status": "no_detected_breakage",
+  "operations": 5,
+  "tuple_pairs": 0,
+  "findings": [],
+  "inputs": {
+    "old": {
+      "archive_sha256": "f496222c2ef82b0ca98a969784bcbcf980c601053f362d3dd92a15d1513c413c",
+      "approved_sha256_checked": true,
+      "preflight": {
+        "entries": 1,
+        "directory_bytes": 58,
+        "zip64": false
+      },
+      "member": "openapi.json",
+      "member_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+      "checked_files": [
+        {
+          "path": "openapi.json",
+          "bytes": 23132,
+          "sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a"
+        }
+      ],
+      "all_payloads_crc_checked": true,
+      "layout": {
+        "entries": 1,
+        "directory_bytes": 58,
+        "zip64": false,
+        "local_records": 1,
+        "local_header_bytes": 42,
+        "compressed_payload_bytes": 23132,
+        "descriptor_bytes": 0,
+        "end_record_bytes": 22
+      },
+      "strict_layout_checked": true
+    },
+    "new": {
+      "archive_sha256": "f496222c2ef82b0ca98a969784bcbcf980c601053f362d3dd92a15d1513c413c",
+      "approved_sha256_checked": true,
+      "preflight": {
+        "entries": 1,
+        "directory_bytes": 58,
+        "zip64": false
+      },
+      "member": "openapi.json",
+      "member_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+      "checked_files": [
+        {
+          "path": "openapi.json",
+          "bytes": 23132,
+          "sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a"
+        }
+      ],
+      "all_payloads_crc_checked": true,
+      "layout": {
+        "entries": 1,
+        "directory_bytes": 58,
+        "zip64": false,
+        "local_records": 1,
+        "local_header_bytes": 42,
+        "compressed_payload_bytes": 23132,
+        "descriptor_bytes": 0,
+        "end_record_bytes": 22
+      },
+      "strict_layout_checked": true
+    }
+  },
+  "described_operations_invoked": false
+}

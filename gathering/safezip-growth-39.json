@@ -1,0 +1,13 @@
+{
+  "inherited_test": "test_actual_input_size_checked_after_stat",
+  "inherited_failure": "Relative fixture path compared with absolute local_path result: mutation hook never fires.",
+  "real_growth_refusal": "archive byte limit exceeded while reading",
+  "mutation_hook_calls": 1,
+  "output_created": false,
+  "line_source_modified": false,
+  "absolute_scratch_suite": {
+    "exit": 0,
+    "tests": 44,
+    "output_sha256": "9abf718e925a693b0ec31078b7afa8639ef0df0cffab65edaeb0678be1df9726"
+  }
+}

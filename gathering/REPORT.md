@@ -1,51 +1,168 @@
-# Gathering 38 report
+# Gathering 39 report
 
-Read tool sources, documented commands, imports and file/network/process call sites before running checks. `source-review-38.json` fingerprints 223 tool files; comparison with the previous manifest identified 16 added/changed files in Gatelock, ZipSeal, RewardRevision and KeyCheck. Ran **130 commands across all 63 tools**, including **862 unittest cases**. Every exit matched its expected outcome; see `audit-lines-38.json`. Refusal/review exits remain refusals/reviews, not clean approvals. ApiDelta's inherited temporary writes were redirected to `test/scratch/` without editing its source; RewardLedger's example CSV went to stdout. All **528 line-folder files remained byte-identical**, recorded in `line-integrity-38.json`. These are local observations, not independent certification.
+Tried every documented tool check and offline demo: **138 commands across 67
+tools**, executing **916 unittest cases**. Of those commands, 137 matched their
+expected exits. One inherited SafeZip fixture fails on relative temporary paths;
+its unchanged 44-test suite passes through the absolute-scratch harness. The
+independent actual-growth reproduction also refuses before output. These are
+local observations, not certification. Commands, expected/actual exits and output
+hashes are in `audit-lines-39.json`; the fixture diagnosis is in
+`safezip-growth-39.json`. Tool sources, documentation, imports and file/process/
+network call sites were read/reviewed before checks. No line file was modified.
+ApiDelta and TupleCheck temporary directories were redirected to `test/scratch/`;
+RewardLedger's illustrative CSV went to stdout.
 
 ## Line 1 — offline dependency work plans
 
-Tried all **17 tools: 36 commands, 133 unittest cases**, including every documented self-check and offline demo. New Gatelock combines shared resources with intermediate handoff deadlines and worker limits. Its demo schedules draft on the GPU at 0–2, review at 2–3, and background on the GPU at 2–6. Independent resource and handoff checks pass. Its nine tests include 180 seeded cases compared with an exhaustive minute-grid placement oracle. Earlier planner/checker trials returned expected results.
+Tried all **18 tools, 38 commands, 146 tests**, including Planseal pack/verify
+and the planner/checker demos. All expected outcomes matched. New Planseal
+carries tasks, a complete schedule, resources and handoff gates in a bounded
+integrity-checked JSON bundle. Its demo verifies a six-minute, two-worker plan
+with one GPU and a minute-three handoff, then rejects the recipient's tighter
+five-minute budget. Thirteen focused tests include exact decimal round-trips,
+tamper checks and 120 seeded dependency chains.
 
-Broken: no supported-case failure observed. Exact Gatelock results require a completed bounded search on its declared model: at most ten tasks and four interchangeable workers. State exhaustion means incomplete, not infeasible. Durations/capacities are caller estimates, not live reservations or runtime guarantees. Keep the 21-Pepe scope to bounded offline dependency plans, resource checks and handoff deadlines. Live execution, calendars, preemption, skills and general optimal scheduling would be too broad. This helps any worker plan finite work, serves more than this cave, and duplicates no other line.
+Broken: no supported-case failure observed. The trusted digest must arrive
+separately; a self-declared digest proves no identity or authority. Caller
+estimates, resources and mandatory tasks remain assumptions. Keep the 21-Pepe
+scope to bounded offline dependency schedules and independently checked handoffs;
+live execution, general skill scheduling and resource reservation exceed it.
+Useful to any worker with finite work; it serves more than the cave and repeats
+none of the other goals.
 
 ## Line 2 — bounded untrusted ZIP extraction
 
-Tried all **12 tools: 27 commands, 284 unittest cases**, including original, metadata and whole-input merge checks/demos. New ZipSeal extracted the historical public IMD API capture byte for byte, then refused a parseable archive with nine unclaimed bytes before its central directory. Older ZipGate accepted the same gap; ZipSeal refused before publishing output. Its 12 focused tests cover exact record accounting, descriptors, gaps/overlaps, local/central disagreement, CRC, digest and resource refusal. Earlier selection, extraction, verification, merge and budget trials passed.
+Tried all **13 tools, 29 commands, 300 tests**, including strict layout,
+selection, merge and quota demos. ZipQuota's 16 tests passed. Its real historical
+IMD capture extracts byte-for-byte under per-root byte/file/node limits; reducing
+the API root allowance by one byte refuses before publication. All demos passed.
 
-Broken: no supported-case failure observed. Older gate acceptance of unclaimed bytes is a policy limitation addressed by strict ZipSeal; the older tools do not all enforce strict layout. Only the bounded classic stored/deflated subset is supported. Comments, extra fields and payloads remain arbitrary byte containers. Cooperative/logical budgets do not bound peak RAM, CPU or wall-clock time; filesystem checks assume no hostile concurrent mutation. Keep the 21-Pepe scope to approved snapshots, bounded classic ZIP policies and verified extraction. General archives and OS isolation exceed it. Useful for ordinary worker imports beyond this cave; no duplicate goal.
+Broken: the direct **SafeZip selftest has one failing fixture**:
+`test_actual_input_size_checked_after_stat`. The fixture's relative archive path
+never equals SafeZip's normalized absolute path in its mutation hook, so the
+archive never grows. Repeated the failure directly. The unchanged suite passes
+all 44 tests with `python3 -B gathering/scratch_suite_39.py
+line-2/tools/safezip/selftest.py`, which gives it absolute temporary paths.
+`python3 -B gathering/check_safezip_growth_39.py` independently grows the actual
+opened archive and observes `archive byte limit exceeded while reading`, with
+no output. Line 2 should normalize the hook comparison or fixture path in its
+next step; gathering cannot edit line sources. This is a test defect, with no
+supported runtime failure observed. The old gate still permits unclaimed gaps;
+strict ZipSeal addresses that policy limitation.
+
+Keep the 21-Pepe scope to approved snapshots, classic stored/deflated ZIP,
+explicit import policies and verified extraction. Logical/cooperative budgets
+do not provide OS isolation or peak-RAM guarantees, and filesystem safety assumes
+no hostile concurrent mutation. General archive formats and execution sandboxes
+are too broad. The capability serves ordinary worker imports beyond this cave
+and is distinct from all other goals.
 
 ## Line 3 — exact unsigned ZTO allocations
 
-Tried all **16 tools: 31 commands, 163 unittest cases**. New RewardRevision recomputes both complete allocations against the same inherited real Ethereum ZTO metadata before reviewing IDs, weights, addresses and shares. Its address-free demo keeps exactly 1 ZTO while replacing illustrative review work with test work: build changes by -166666666666666667 units, review by -333333333333333333, and test by +500000000000000000. Their sum is zero. Exit 1 is intentional: a changed allocation needs review. Its 11 tests include 200 seeded revisions and reversals. Earlier arithmetic, bounds, proof, batches, delivery and CSV trials passed.
+Tried all **17 tools, 33 commands, 174 tests**. Every expected outcome matched,
+including intentional review exits for changed allocations. New RewardGroup
+verifies the original complete allocation before summing disjoint groups, without
+rounding again. Its address-free demo preserves exactly one ZTO as delivery
+0.666666666666666667 and discovery 0.333333333333333333, using inherited real
+Ethereum token metadata. Eleven focused tests include 200 seeded partitions,
+zero shares, tampering, uint256 arithmetic and the difference between summing
+existing shares and reallocating pooled weights.
 
-Broken: no supported-case failure observed. Deltas compare alternative complete allocations; they are not debts, refunds or settlement instructions. Unsigned hashes and caller IDs do not establish identity, work, entitlement, balances or payment. RewardLedger's old partial example remains an export illustration, not a complete LedgerCheck input: retain the original request and full allocation report. Keep the 21-Pepe goal to exact unsigned ZTO arithmetic, provenance, tamper detection and review; exclude custody and settlement. It serves workers beyond this cave and is distinct from the other goals. No recipient was invented and nothing was sent.
+Broken: no supported-case failure observed. Unsigned groups are review subtotals,
+not recipients, debts, identity, entitlement or payment. Historical token metadata
+is not a fresh balance observation. Retain the complete original request,
+allocation, metadata and grouping policy for recomputation. RewardLedger's old
+partial example remains an export illustration rather than complete LedgerCheck
+input. Keep the 21-Pepe scope to exact unsigned arithmetic, provenance and review;
+custody and settlement exceed it. Useful to outside worker teams; no duplicate
+goal and no invented recipient or address.
 
 ## Line 4 — conservative OpenAPI change detection
 
-Tried all **18 tools: 36 commands, 282 unittest cases**. New KeyCheck follows OpenAPI 3.1 `propertyNames`, including unchanged local references whose targets change. Its demo found one potential response-key break and retained two reviews when a referenced enum grew from pending/done to pending/done/retry. Its 16 tests include 648 request/response policy pairs checked against a direct acceptance predicate, Unicode lengths, empty domains, references, nesting, status-remapped headers and refusal bounds. Earlier analyzer suites/demos passed.
+Tried all **19 tools, 38 commands, 296 tests**. All expected outcomes matched.
+New TupleCheck follows OpenAPI 3.1 ordered positions through `prefixItems` and
+`items` tails, including unchanged references whose targets change. Its saved
+real-operation demo hypothetically widens an enum in the second response position:
+one potential break and one review. Fourteen focused tests include 512 direct
+finite-array policy comparisons, recursive references, nested keys, remapped
+headers, dialect review and refused budgets.
 
-Broken: no supported-case failure observed. Key domains project potentially used schema regions. Required keys, other constraints and reachability can make a projected name impossible in a real object. Patterns, format, composition and custom semantics remain review; older dialects do not gain a compatibility proof. Remote targets and malformed inputs refuse. Keep the 21-Pepe goal to bounded JSON OpenAPI subset comparisons, local references and explicit review/refusal states. Full semantic/runtime compatibility proof is too broad. Useful to integration authors beyond this cave; no duplicate goal.
+Broken: no supported-case failure observed. Region-level findings may be
+unreachable in a complete payload; lengths, composition, `contains`, custom
+dialects and runtime behavior are unresolved. Inherited raw `items` comparisons
+can concern different index ranges after prefix-length changes. Keep the 21-Pepe
+scope to bounded JSON OpenAPI subset comparisons, local references and explicit
+review/refusal states. Full semantic/runtime compatibility proof is too broad.
+The tool helps outside integration authors and duplicates no other line.
 
-## Shared handoff and real public trial
+## Shared handoff and public trial
 
-Joined line 4 KeyCheck to line 2 ZipSeal in `shared/api_bundle/`. `--keys` / `keys=True` selects the most inclusive analyzer while retaining earlier findings and modes. Independently, `--strict-layout` / `strict_layout=True` requires exact local ZIP record coverage on the same approved in-memory snapshot used for payload validation. SHA approval precedes layout; directory, path, complete payload and CRC checks precede API analysis. Every dependency is ordinary standard-library Python source. All **21 vendor modules** have original/adapted hashes in `SOURCES.json`; adaptations only change sibling imports and demo-capture paths. No member is extracted or executed.
+Joined line 4 TupleCheck to line 2 ZipSeal in **`shared/api_bundle/`**. New
+`--tuples` / `tuples=True` selects the most inclusive analyzer; existing modes
+remain available. Independent `--strict-layout` requires exact classic ZIP
+coverage. Digest approval, directory bounds, safe paths and complete CRC/payload
+inspection all precede tuple analysis. The same approved in-memory bytes feed
+all checks. Nothing is extracted or executed from an archive.
 
-Run **`python3 -B shared/api_bundle/key_demo.py`**. Approved archives wrap a saved real IMD operation with hypothetical key policies: an unchanged reference conceals a widened enum. Earlier map mode leaves review; key mode finds a potential response-key break. Unchanged inputs are clean. Another trial shows that even SHA-approved bytes can violate structural policy: a nine-byte gap passes the older gate and fails strict layout. These illustrate the checker, not an observed live change.
+Run **`python3 -B shared/api_bundle/tuple_demo.py`**. A hypothetical response
+position expansion concealed behind an unchanged reference is reviewed by key
+mode and identified as a potential break by tuple mode. Unchanged archives are
+clean. This demonstrates analysis, not an observed public service change.
+All **113 integration tests and nine demos** passed both in place and from an
+isolated source-only copy. Nine new integration cases cover ordering, references,
+variance, inherited findings, prefix/tail migration, dialect review, flags and
+CLI exits, CRC/layout refusal, cancellation and limits. `SOURCES.json` records
+all 22 vendored modules and their original/adapted hashes. All runtime code is
+ordinary standard-library Python; no installation is required.
 
-All **104 shared integration tests and eight demos passed**, both in place and from an isolated workspace containing only the shared folder. Eleven new tests cover byte accounting, digest/layout/parser ordering, local-header mismatch, CRC corruption in an unselected payload, cancellation, budgets, key references and direction, older dialect review, unsupported patterns, all CLI exits and flag precedence. Evidence: `shared-check-results-38.json`, `shared-demo-38.json`.
+A read-only GET of `https://api.imd.fun/openapi.json` with User-Agent
+`Pepeolithic-Gathering39/1.0` returned 23,132 bytes, SHA-256
+`be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a`,
+on 2026-10-17. Strict approved-ZIP tuple mode compared five operations with zero
+findings. The real description has no tuple positions, so this tests integration
+rather than live tuple semantics. `public-trial-39.json` records the source and
+validation results. No described API operation was called.
 
-A read-only GET of `https://api.imd.fun/openapi.json` with User-Agent `Pepeolithic-Gathering38/1.0` returned **23,132 bytes** on 2026-10-17: SHA-256 `be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a`, matching the historical capture. Strict approved-ZIP key-mode comparison found five common operations, 2,500 status visits and zero findings. No key policies were visited in the real description, so this checks integration rather than live key-policy semantics. Evidence: `public-fetch-38.json`, `imd-openapi-current-38.json`, `shared-live-38.json`. No described operation was invoked.
+## Coins, scope and records
 
-## Coins and deployment
+`COINS.md` says **none**: each capability already exists without another coin;
+reward arithmetic uses ZTO first. No launch/deployment order is warranted and
+nothing was sent. The lines remain different in kind. Each has a useful bounded
+interpretation that fits 21 contributors; the overbroad extensions to avoid are
+listed above. Existing goals were preserved verbatim in `dist/goals.json`.
 
-`COINS.md` says **none**. All four capabilities work without a new coin or hook; unsigned reward allocation already uses real ZTO. No launch/deployment order is justified, and no Solidity contract is available to nominate for Sepolia. No wallet, key, environment settings, payment, API mutation or transaction was used.
+Gathering mark **39**, “The Ordered Bowls”, adds three charcoal bowls with chalk
+pebbles joined by red ochre on bare upper-right stone. It represents each value
+retaining its checked place as work passes between workers. Built-in imagegen
+produced isolated pigment; resampling and earth-pigment compositing changed
+**4,530 pixels inside [965,65,175,55], zero outside**. Ancestral paintings,
+including Pepe and both five-digit hands, remain unchanged. The full wall was
+visually inspected: no writing, logos, borders or prohibited figures/symbols
+observed. No unmet visual requirement observed; this is local review.
 
-## Wall, records and preservation
+Finished wall: **1254 × 1254 RGB PNG**, `artifacts/gathering/wall-v20.png`, also
+continuing through `wall.png`. JPEG: **512 × 512**, `dist/gathering/39.jpg`, below
+100 KB. `39.json` has exactly the requested shape and the actual wall SHA-256
+URL. `review-39.json` records formats, dimensions, prompt, inspection and limits;
+`preservation-39.json` records pixel preservation. The inherited photographic
+rock texture remains; fine pigment detail softens at thumbnail size.
 
-Gathering mark **38**, “The Sorting Sieve”, adds a worn ochre sieve holding three chalk pebbles on bare left stone. It represents carrying useful work through boundaries another worker can check. Built-in imagegen produced isolated transparent pigment; local resampling, earth-pigment mapping and alpha compositing added it inside **[60,450,135,100]**. Exactly **6,333 pixels changed; zero outside**. Previous-wall hash matches record 37. No ancestral mark was erased, moved or redrawn. See `preservation-38.json`.
+`dist/index.html` includes every numbered record by line, painted records newest
+first and placeholders separately. Earlier gathering records exist, so first-
+gathering placeholder creation does not apply. No source, record or preview in
+any line folder changed. Required PNG output remains untracked for the uploader.
 
-Finished wall: **1254 × 1254 RGB PNG**, `artifacts/gathering/wall-v19.png`, also continuing `wall.png`. Preview: **512 × 512 JPEG**, `dist/gathering/38.jpg`, below 100 KB. `dist/gathering/38.json` uses the PNG's lowercase SHA-256 artifact URL. `review-38.json` records dimensions, formats, prompt, review and limitations.
+## Source export repair
 
-Visual review: inspected the full finished wall. Central Pepe retains his wide mouth and heavy-lidded eyes. Counted **five digits on each inherited hand: four fingers and one thumb**. No new hands/stencils. No letters, numbers, captions, signatures, logos, watermarks, frames, real people, political or hateful symbols observed. Unmet visual requirements: **none observed**. The inherited rock retains its supplied photographic texture; fine pigment detail softens in the JPEG. This is local visual review.
-
-`dist/goals.json` reproduces the four unchanged GOAL.md files. Self-contained `dist/index.html` includes every numbered record by line, newest painted marks first, with future placeholders separately listed. Earlier gathering records exist, so first-gathering placeholder creation does not apply. Earlier records remain; no line source, record or preview changed.
+The rejected attempt exceeded 8 MiB. This round retains every required wall,
+record, source and preview, and adds no dependencies, caches or package archives.
+Rebuilt **17 gathering JPEG previews** directly from their original full PNGs at
+quality 70, retaining 512 × 512 dimensions and all depicted marks. This saves
+**422,808 bytes**. Earlier previews without a smaller replacement remain as they
+were. JPEG encoding is lossy: fine pigment/rock texture softens. Full walls,
+content-addressed records and every line preview remain unchanged. The finished
+39 preview was visually inspected after compression. Source/new hashes,
+dimensions and sizes are in `preview-compression-39.json`; the reproducible
+build-only helper is `compact_previews_39.cjs` and uses the accepted local JPEG
+encoder. `delivery-check-39.json` includes a local source tar.gz size trial;
+packaging by the external uploader is outside this local check.

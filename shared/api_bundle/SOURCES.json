@@ -124,5 +124,11 @@
     "source_sha256": "4b94b54cd8d28e61e5feea7568178a4fcda85da15417f6660826b0c339b25af7",
     "sha256": "1ea032a7f1062d2029360522395efff2a22687455b27cc294c1a674ec5e808cf",
     "adaptation": "Sibling module imports and demonstration capture paths only."
+  },
+  "vendor/tuplecheck.py": {
+    "source": "line-4/tools/tuplecheck/tuplecheck.py",
+    "source_sha256": "2a50497177c16718fc7289ed397d4bfe8900249c3192f8cc1a46e95930b0b1d7",
+    "sha256": "bde489d7419a13b47499caeefa6cb284679911fc57e6affe9adf461fef5d0d67",
+    "adaptation": "Sibling module import and demo capture path only; comparison logic unchanged."
   }
 }

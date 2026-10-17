@@ -1,0 +1,83 @@
+{
+  "tool_files": 237,
+  "reviewed_ast_calls": 15225,
+  "all_tool_files_sha256": "644a5e765aaf47778d2766e0be77ead317b5be0bd8fd5a18d36dba127eeddb7d",
+  "changed_since_38": [
+    {
+      "path": "line-1/tools/planseal/README.md",
+      "sha256": "555248a58d0f490b806f181ae8591af2125baf70d52995576501af760a18996f",
+      "bytes": 4984
+    },
+    {
+      "path": "line-1/tools/planseal/RESULT.md",
+      "sha256": "01e29b1d2191fc9ca86967777625bd8552550936f13dbc0d860ec9847a6d0287",
+      "bytes": 1111
+    },
+    {
+      "path": "line-1/tools/planseal/planseal.py",
+      "sha256": "f428da15698a42bd430e94e2af1afc58d6f01c1c81493d0a3f81d9cd724cd3be",
+      "bytes": 6632
+    },
+    {
+      "path": "line-1/tools/planseal/selftest.py",
+      "sha256": "19019d4ddf9edb97d7608a87fe94a720dacadc0ecb3a9e379a021ac7098c7a32",
+      "bytes": 7139
+    },
+    {
+      "path": "line-2/tools/zipquota/README.md",
+      "sha256": "f2b8492ab2b70f5a9003b2c86e8c813a3345125802d47af8fd4c4c2355cdc150",
+      "bytes": 3863
+    },
+    {
+      "path": "line-2/tools/zipquota/demo.py",
+      "sha256": "596b68d6a21e0a4fa5988ac3fcc3e10808d22f67e9c02e2e64c43c7daaaabcfd",
+      "bytes": 2020
+    },
+    {
+      "path": "line-2/tools/zipquota/selftest.py",
+      "sha256": "df5b9c010aa09775e1b649371238185f521127689d5c72ea2bff6f1819c1ff8f",
+      "bytes": 5711
+    },
+    {
+      "path": "line-2/tools/zipquota/zipquota.py",
+      "sha256": "06b55e640f83f171f2d2e57c12a7cdd4a822ad2bfac3ff36f382febcd5938284",
+      "bytes": 8056
+    },
+    {
+      "path": "line-3/tools/rewardgroup/README.md",
+      "sha256": "8d43f1bef4c9ff9f8cc5186cec594d0b2f0a26a7504b1a0f6975c33502411139",
+      "bytes": 3584
+    },
+    {
+      "path": "line-3/tools/rewardgroup/rewardgroup.py",
+      "sha256": "1a1346466142452e00c2c11195c8e63cad88b74244c0114795bd78292135bc9f",
+      "bytes": 5570
+    },
+    {
+      "path": "line-3/tools/rewardgroup/selftest.py",
+      "sha256": "60d10be9ebe32e865a1fd419907da9dad0734a332071247ee5f7926c2a9b3fab",
+      "bytes": 8285
+    },
+    {
+      "path": "line-4/tools/tuplecheck/README.md",
+      "sha256": "926a9edffbd83fbbbb3d890e947fe75440c5c39d52db30735467cb8722ecf9d0",
+      "bytes": 5320
+    },
+    {
+      "path": "line-4/tools/tuplecheck/selftest.py",
+      "sha256": "26c18a177fffa1f0324206093e84fac0fa2c7e44a7e37a652e7e3018f74849ba",
+      "bytes": 11048
+    },
+    {
+      "path": "line-4/tools/tuplecheck/tuplecheck.py",
+      "sha256": "2a50497177c16718fc7289ed397d4bfe8900249c3192f8cc1a46e95930b0b1d7",
+      "bytes": 7261
+    }
+  ],
+  "execution": "Only reviewed offline check/demo commands. No inspect-token live call, description operation, wallet, key, environment, payment, signature or transaction used.",
+  "temporary_redirects": [
+    "ApiDelta",
+    "TupleCheck"
+  ],
+  "observed_test_issue": "SafeZip relative fixture equality misses normalized path; reproduced and checked with absolute scratch separately."
+}

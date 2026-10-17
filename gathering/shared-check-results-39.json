@@ -1,0 +1,249 @@
+{
+  "round": 39,
+  "vendor_sources": 22,
+  "in_place": [
+    {
+      "script": "selftest.py",
+      "exit": 0,
+      "tests": 53,
+      "output_sha256": "11ca186c07db8524df6f2c5664327ec6d52caba499f9a279ae008f5fd36bc379",
+      "evidence": "passed"
+    },
+    {
+      "script": "parameter_selftest.py",
+      "exit": 0,
+      "tests": 8,
+      "output_sha256": "7d21195db9ead20a704f84b0f9af55408dc0ee1eef6275a1353e3031e4f674fe",
+      "evidence": "passed"
+    },
+    {
+      "script": "status_selftest.py",
+      "exit": 0,
+      "tests": 9,
+      "output_sha256": "91ad131769b6f76d0bb9ffeae7e5148baf896373724e48856bf9673448972d0e",
+      "evidence": "passed"
+    },
+    {
+      "script": "fallback_selftest.py",
+      "exit": 0,
+      "tests": 10,
+      "output_sha256": "6537b0118546c856d804fa93c93c048377a1ba8915123c816d27f150ec440949",
+      "evidence": "passed"
+    },
+    {
+      "script": "dispatch_selftest.py",
+      "exit": 0,
+      "tests": 5,
+      "output_sha256": "bc4491210f0a4e579966454baf2e225a957e096fb641d70aa3244dcdd04e5008",
+      "evidence": "passed"
+    },
+    {
+      "script": "map_selftest.py",
+      "exit": 0,
+      "tests": 8,
+      "output_sha256": "c17e0db1422c10e81665450a3b40a29849215515eb6af538ae8abb99fd364f5a",
+      "evidence": "passed"
+    },
+    {
+      "script": "key_selftest.py",
+      "exit": 0,
+      "tests": 11,
+      "output_sha256": "59ec53fd48233afdb36657f598d8354c2d2460b0e7de8cf0969413794c36f3c0",
+      "evidence": "passed"
+    },
+    {
+      "script": "tuple_selftest.py",
+      "exit": 0,
+      "tests": 9,
+      "output_sha256": "fdfbb6d89bc40ba04db9edc89cd066ae1fec53fc5fb1c2e8c31b0fa925b9907d",
+      "evidence": "passed"
+    },
+    {
+      "script": "demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "bd4abdfe868a771f3aff347f2f182db18b88a0d194e4539f4b1258f433038a17",
+      "evidence": "passed"
+    },
+    {
+      "script": "parameter_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "e9b64e3970d366c58ec6ba56e49b316a23bf768e50235e3e94a83453b575b1d0",
+      "evidence": "passed"
+    },
+    {
+      "script": "server_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "2535b5dd09d90bbffec65d9ed842207cc0efd30e4cd0f53eb614b0ea2c791d7d",
+      "evidence": "passed"
+    },
+    {
+      "script": "status_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "6686245cedce148560f011c827d95d4758a1d60b491557edb8819688d4850736",
+      "evidence": "passed"
+    },
+    {
+      "script": "fallback_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "e35a5644289c36e7fd45bec15d1de4107a8f3119b45bfb30acc73bae0b94339e",
+      "evidence": "passed"
+    },
+    {
+      "script": "dispatch_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "ee809fba26c0fc022398ce41559e547993210c3212be8f9e92ef25255d1b41de",
+      "evidence": "passed"
+    },
+    {
+      "script": "map_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "87c404cfeff2349adeb9ee61abc09951f20db81ac24e1ab759230116e4dd1ccb",
+      "evidence": "passed"
+    },
+    {
+      "script": "key_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "74a0183af534fe6624729d3f7519cacf96ec8ab301214cbcbdaa55be8957bd1e",
+      "evidence": "passed"
+    },
+    {
+      "script": "tuple_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "f2223c7a971421431dd9872e3ef8e1616f1af43b532770e5200f4a079eb521e8",
+      "evidence": "passed"
+    }
+  ],
+  "standalone": [
+    {
+      "script": "selftest.py",
+      "exit": 0,
+      "tests": 53,
+      "output_sha256": "20d509c23182ff50926044786837b7034548e0a403eef1c0772c4abb5811cdcf",
+      "evidence": "passed"
+    },
+    {
+      "script": "parameter_selftest.py",
+      "exit": 0,
+      "tests": 8,
+      "output_sha256": "a65ae0a593a339b43c247de9402268d6a202ae4895b9839cfb2c9384682ba8b3",
+      "evidence": "passed"
+    },
+    {
+      "script": "status_selftest.py",
+      "exit": 0,
+      "tests": 9,
+      "output_sha256": "ddadd69fb52ac41e9088aa73214e352448dc8ce7a282c3e80544277e6e4f6d37",
+      "evidence": "passed"
+    },
+    {
+      "script": "fallback_selftest.py",
+      "exit": 0,
+      "tests": 10,
+      "output_sha256": "4e38b4419d45e871c314deb61da84cd9b67b9df88642cf1c0a33fffa1bd0f01b",
+      "evidence": "passed"
+    },
+    {
+      "script": "dispatch_selftest.py",
+      "exit": 0,
+      "tests": 5,
+      "output_sha256": "e221b9cda8223decd7d64d94fbb2ec12a67a581c24221f075d850e4274e3f094",
+      "evidence": "passed"
+    },
+    {
+      "script": "map_selftest.py",
+      "exit": 0,
+      "tests": 8,
+      "output_sha256": "8fb05bdc54179537a05ebc154d2957bbf50fc5dd23592b3ea6d65d78324f7faa",
+      "evidence": "passed"
+    },
+    {
+      "script": "key_selftest.py",
+      "exit": 0,
+      "tests": 11,
+      "output_sha256": "598651e6de4b221b2a4d8b82cda1affd704ea1afb2d5b197fd18122539c441ad",
+      "evidence": "passed"
+    },
+    {
+      "script": "tuple_selftest.py",
+      "exit": 0,
+      "tests": 9,
+      "output_sha256": "15612599c315f962018b4ddf0a809af20a33bfd828b304f2c194d0e3a24cc194",
+      "evidence": "passed"
+    },
+    {
+      "script": "demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "bd4abdfe868a771f3aff347f2f182db18b88a0d194e4539f4b1258f433038a17",
+      "evidence": "passed"
+    },
+    {
+      "script": "parameter_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "e9b64e3970d366c58ec6ba56e49b316a23bf768e50235e3e94a83453b575b1d0",
+      "evidence": "passed"
+    },
+    {
+      "script": "server_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "2535b5dd09d90bbffec65d9ed842207cc0efd30e4cd0f53eb614b0ea2c791d7d",
+      "evidence": "passed"
+    },
+    {
+      "script": "status_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "6686245cedce148560f011c827d95d4758a1d60b491557edb8819688d4850736",
+      "evidence": "passed"
+    },
+    {
+      "script": "fallback_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "e35a5644289c36e7fd45bec15d1de4107a8f3119b45bfb30acc73bae0b94339e",
+      "evidence": "passed"
+    },
+    {
+      "script": "dispatch_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "ee809fba26c0fc022398ce41559e547993210c3212be8f9e92ef25255d1b41de",
+      "evidence": "passed"
+    },
+    {
+      "script": "map_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "87c404cfeff2349adeb9ee61abc09951f20db81ac24e1ab759230116e4dd1ccb",
+      "evidence": "passed"
+    },
+    {
+      "script": "key_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "74a0183af534fe6624729d3f7519cacf96ec8ab301214cbcbdaa55be8957bd1e",
+      "evidence": "passed"
+    },
+    {
+      "script": "tuple_demo.py",
+      "exit": 0,
+      "tests": 0,
+      "output_sha256": "f2223c7a971421431dd9872e3ef8e1616f1af43b532770e5200f4a079eb521e8",
+      "evidence": "passed"
+    }
+  ],
+  "tests": 113,
+  "demos": 9,
+  "passed": true
+}

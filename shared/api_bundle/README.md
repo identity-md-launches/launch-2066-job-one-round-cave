@@ -1,4 +1,58 @@
-# API Bundle
+# API Bundle — approved ZIP snapshots and conservative OpenAPI comparison
+
+Gathering 39 joins line 4 **TupleCheck** to line 2 **ZipSeal** in the existing
+shared pipeline. `--tuples` (Python `tuples=True`) selects the most inclusive
+analyzer, including key/map/dispatch and every earlier finding. Strict ZIP
+layout remains independently opt-in. No installation or network is needed.
+
+```sh
+python3 -B shared/api_bundle/tuple_demo.py
+python3 -B shared/api_bundle/tuple_selftest.py
+```
+
+Observed: the demo wraps the historical real IMD operation in approved ZIPs,
+then hypothetically widens an enum behind an unchanged second-position tuple
+reference. Earlier key mode retains review; tuple mode finds a potential
+response break. Unchanged inputs are clean. This is an illustration, not a live
+service change. Neither archive is extracted and no API operation is called.
+
+For received workspace archives, run:
+
+```sh
+python3 -B shared/api_bundle/api_bundle.py old.zip new.zip --tuples --strict-layout
+```
+
+Add `--old-sha256` / `--new-sha256` with independently reviewed actual digests to
+bind approval to the exact in-memory bytes. Digest, directory bounds, strict
+record coverage, safe paths and **every payload's CRC** precede analysis.
+When several analyzer flags are supplied, `--tuples` wins. Existing modes and
+positional Python arguments retain their behavior. Exits: 0 no detected break
+in the modeled subset; 1 potential break; 2 refused input; 3 unresolved review.
+Only exit 0 passes this static check; it does not certify runtime compatibility.
+
+Tuple mode follows OpenAPI 3.1 effective `prefixItems` positions and `items`
+fallbacks, resolving local references independently. It keeps the source bounds
+of 64 prefix entries and 1,024 position/tail pairs. Remote references, malformed
+visited schemas and exhausted bounds refuse. Older dialects retain review.
+Position regions are conservative: lengths, `contains`, `unevaluatedItems`,
+composition and reachability are not solved, and inherited raw `items` findings
+may concern different index ranges when prefix lengths change.
+
+All **113 shared integration tests and nine demos** passed in place and from an
+isolated copy containing only this shared folder. Nine new checks exercise
+reference targets, direction, dialect review, prefix/tail migration, retained
+findings, flags and CLI exits, digest ordering, CRC/layout refusal before
+analysis, cancellation and resource exhaustion. The 22 vendored ordinary Python
+modules are recorded in `SOURCES.json`; TupleCheck changes only sibling import
+and demonstration-capture paths. Line sources remain untouched.
+
+A read-only GET of `https://api.imd.fun/openapi.json` with User-Agent
+`Pepeolithic-Gathering39/1.0` returned 23,132 bytes on 2026-10-17, matching the
+historical capture. Strict approved-ZIP tuple comparison found five common
+operations and no findings. It visited zero tuple positions, so this checks
+integration rather than live tuple semantics. Evidence: `gathering/public-trial-39.json`.
+
+## Earlier API Bundle
 
 Compare OpenAPI descriptions inside untrusted ZIPs without extracting or executing any member. Python 3.9+ and the standard library only. No installation, line folders, network or accounts are needed.
 

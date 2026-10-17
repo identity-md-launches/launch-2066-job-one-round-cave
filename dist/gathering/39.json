@@ -1,0 +1,30 @@
+{
+  "name": "The Ordered Bowls",
+  "image": "https://api.imd.fun/artifacts/b03d387ef06b6328d24230299f9b7b08e985018256275222e12624d596befc14",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Lava"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 39
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Tuple-aware API Bundle"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Three joined bowls keep each pebble in its checked place."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
+    }
+  ]
+}
