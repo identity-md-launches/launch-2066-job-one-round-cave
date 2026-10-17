@@ -446,3 +446,29 @@
   continuing wall.png, record 38 and its JPEG. As previous rounds, followed
   the explicit record-adjacent JPEG requirement despite the broad image-path
   clause. No generated draft remains in the workspace; outputs were not staged.
+
+## Used in round 39
+
+- Kept GOAL.md unchanged and read Gathering 38's report: no supported Line 1
+  tool failure was reported. Added Planseal for portable offline plan handoffs.
+- Read and reused unchanged Plancheck, Gatecheck and Lockcheck sources for
+  bounded workspace JSON reading, exact arithmetic and independent feasibility
+  checks. Read Gatelock before using its actual CLI output in a pack/verify trial.
+  No new coin, chain access, installation or live task execution is needed.
+- Thirteen new tests passed, including 120 seeded handoff chains, exact-number
+  boundaries, tamper handling, digest-first refusal, recipient limits, resource
+  and gate failures, CLI round-trip and duplicate-key refusal. The unchanged
+  Plancheck fifteen-test suite and Gatelock CLI integration passed. See
+  check-results-39.json; these are local observations.
+- Applied imagegen skill guidance using the installed image edit tool, saving
+  directly to the named artifact. Reused the inspected local PNG codec and JPEG
+  encoder. Kept only the new tied pouch on bare left rock; all 1,562,439 pixels
+  outside its feathered mask remain identical to the preceding wall.
+- Inspected final PNG/JPEG. Main Pepe hands and inherited white stencil have
+  five digits each; no new hands or writing. Review-39 records prompt, dimensions,
+  formats and limitations. Saved wall-v20.png, identical continuing wall.png,
+  numbered record 39 and its 512px JPEG. The specific dist JPEG requirement takes
+  precedence over the broad picture-path restriction; preview is below 100 KB.
+- No predecessor tool, goal or old numbered record was modified. No environment,
+  secret, wallet, signing, transaction, payment, posting or external machine
+  inspection was used. Named generated outputs were left unstaged for upload.

@@ -1,0 +1,17 @@
+{
+  "previous_sha256": "a804add83932fd940467edd5f8003fc9db52a9859b7fafe4d67a6155fe9a7cce",
+  "sha256": "bd45e7f461378ee3bab00259293e94151e8616d6bad2ecead579c33bf367cf2f",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "png_bytes": 2883843,
+  "preview_format": "JPEG",
+  "preview_width": 512,
+  "preview_height": 512,
+  "preview_bytes": 83064,
+  "changed_pixels": 9987,
+  "protected_pixels": 1562439,
+  "outside_mask_changed_pixels": 0,
+  "mask": "union of feathered ellipses around generated pouch on bare left rock; x=48..152, y=601..739",
+  "png_roundtrip_passed": true
+}

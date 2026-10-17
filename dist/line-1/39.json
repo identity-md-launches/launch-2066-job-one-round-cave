@@ -1,0 +1,30 @@
+{
+  "name": "The Carried Plan",
+  "image": "https://api.imd.fun/artifacts/bd45e7f461378ee3bab00259293e94151e8616d6bad2ecead579c33bf367cf2f",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Lava"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 39
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Planseal"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A tied pouch carries a complete plan for another worker to open and check."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Offline dependency work planning"
+    }
+  ]
+}

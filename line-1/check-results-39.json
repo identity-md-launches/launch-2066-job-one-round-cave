@@ -1,0 +1,68 @@
+{
+  "planseal_tests": 13,
+  "plancheck_tests": 15,
+  "seeded_handoff_cases": 120,
+  "all_passed": true,
+  "gatelock_cli_pack_verify_integration": {
+    "valid": true,
+    "schedule": {
+      "valid": true,
+      "violations": [],
+      "tasks_expected": 3,
+      "schedule_entries": 3,
+      "workers_checked": 2,
+      "deadline_checked": true,
+      "arithmetic": "exact decimal values; no tolerance",
+      "scope": "full schedule feasibility at supplied estimates; no execution or optimality proof"
+    },
+    "gates": {
+      "valid": true,
+      "schedule_valid": true,
+      "schedule_violations": [],
+      "milestones": [
+        {
+          "id": "handoff",
+          "tasks": [
+            "review"
+          ],
+          "due_minutes": "3",
+          "finish_minutes": "3",
+          "slack_minutes": "0",
+          "on_time": true
+        }
+      ],
+      "arithmetic": "exact decimal minutes; no tolerance; times printed as exact strings",
+      "late_gates": [],
+      "scope": "named task groups only; estimates and worker availability are caller supplied"
+    },
+    "resources": {
+      "valid": true,
+      "schedule_valid": true,
+      "schedule_violations": [],
+      "resources": [
+        {
+          "id": "gpu",
+          "capacity": 1,
+          "peak_units": 1,
+          "valid": true,
+          "conflicts": []
+        }
+      ],
+      "scope": "fixed full-task reservations on [start, finish); caller-supplied capacities and estimates; no execution or rescheduling",
+      "arithmetic": "exact decimal minutes rendered as strings; integer resource units"
+    },
+    "recipient_schedule": {
+      "valid": true,
+      "violations": [],
+      "tasks_expected": 3,
+      "schedule_entries": 3,
+      "workers_checked": 2,
+      "deadline_checked": true,
+      "arithmetic": "exact decimal values; no tolerance",
+      "scope": "full schedule feasibility at supplied estimates; no execution or optimality proof"
+    },
+    "sha256": "ae488a39d2048a13003892d98896fb796f3d1c235156eef118b3474962543038",
+    "scope": "Integrity relative to the supplied digest and feasibility under declared constraints plus recipient workers/budget; no identity, optimality, real availability or execution guarantee."
+  },
+  "authority": "local observations only"
+}

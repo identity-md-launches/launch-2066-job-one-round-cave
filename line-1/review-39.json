@@ -1,0 +1,51 @@
+{
+  "number": 39,
+  "name": "The Carried Plan",
+  "outputs": {
+    "required": "artifacts/line-1/wall-v20.png",
+    "continuing": "artifacts/line-1/wall.png",
+    "record": "dist/line-1/39.json",
+    "preview": "dist/line-1/39.jpg"
+  },
+  "generation": {
+    "tool": "installed mcp__image__edit_image",
+    "prompt": "Use case: precise-object-edit. Input is the ancestral 1254x1254 cave wall, edit target. Preserve every existing painting, Pepe, handprint, rock, cracks, lighting and framing. Add only a small primitive red-ochre hide carrying pouch with a tied neck and chalk-white pebble peeking out, on the bare rock at far left, entirely within x=65..155 and y=490..600. The pouch is a worn hand-made burnt-stick outline and uneven earth pigment, stone texture showing through. It symbolizes carrying a complete work plan safely to the next worker. Keep all existing marks exactly unchanged. Same square dimensions. No new hands or characters. No letters, numbers, writing, captions, signatures, logos, watermarks, borders, frames, modern symbols, photographs or 3D rendering.",
+    "postprocess": "Inherited workspace PNG codec and JPEG encoder; retained only the pouch in a feathered union-of-ellipses mask, restored all other predecessor pixels."
+  },
+  "review_step": "Viewed predecessor, generated edit, finished full PNG and 512px JPEG; decoded pixel comparison outside addition mask.",
+  "visual_requirements": {
+    "square_size_preserved": true,
+    "ancestral_marks_preserved": true,
+    "rock_cracks_light_framing_preserved_outside_addition": true,
+    "pepe_wide_mouth_heavy_lidded_eyes_preserved": true,
+    "main_pepe_left_hand_digits": 5,
+    "main_pepe_right_hand_digits": 5,
+    "inherited_white_stencil_digits": 5,
+    "new_hands": 0,
+    "earth_pigments_only_for_addition": true,
+    "no_new_letters_numbers_captions_signatures_logos_watermarks_borders_frames": true
+  },
+  "unmet_visual_requirements": [],
+  "limitations": [
+    "Local visual review is not independent certification; inherited small secondary figure details are harder to resolve and remain unchanged.",
+    "The pouch appears below the requested placement, entirely on previously bare far-left rock. Rock within its feathered mask is blended from the generated edit; pixels outside are identical.",
+    "Followed the specific record-adjacent dist/line-1/39.jpg requirement despite the general restriction on images outside artifacts. It is the only newly created image outside artifacts and is below 100 KB."
+  ],
+  "media": {
+    "previous_sha256": "a804add83932fd940467edd5f8003fc9db52a9859b7fafe4d67a6155fe9a7cce",
+    "sha256": "bd45e7f461378ee3bab00259293e94151e8616d6bad2ecead579c33bf367cf2f",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "png_bytes": 2883843,
+    "preview_format": "JPEG",
+    "preview_width": 512,
+    "preview_height": 512,
+    "preview_bytes": 83064,
+    "changed_pixels": 9987,
+    "protected_pixels": 1562439,
+    "outside_mask_changed_pixels": 0,
+    "mask": "union of feathered ellipses around generated pouch on bare left rock; x=48..152, y=601..739",
+    "png_roundtrip_passed": true
+  }
+}
