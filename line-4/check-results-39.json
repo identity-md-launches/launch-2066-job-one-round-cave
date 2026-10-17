@@ -1,0 +1,254 @@
+{
+  "suites": [
+    {
+      "tool": "apidelta",
+      "exit": 0,
+      "tests": 44,
+      "stdout": "",
+      "stderr": "............................................\n----------------------------------------------------------------------\nRan 44 tests in 0.272s\n\nOK\n"
+    },
+    {
+      "tool": "authcheck",
+      "exit": 0,
+      "tests": 13,
+      "stdout": "",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 7.972s\n\nOK\n"
+    },
+    {
+      "tool": "boundcheck",
+      "exit": 0,
+      "tests": 11,
+      "stdout": "",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.318s\n\nOK\n"
+    },
+    {
+      "tool": "constcheck",
+      "exit": 0,
+      "tests": 11,
+      "stdout": "",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.286s\n\nOK\n"
+    },
+    {
+      "tool": "dependcheck",
+      "exit": 0,
+      "tests": 11,
+      "stdout": "",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 1.122s\n\nOK\n"
+    },
+    {
+      "tool": "dispatchcheck",
+      "exit": 0,
+      "tests": 19,
+      "stdout": "",
+      "stderr": "...................\n----------------------------------------------------------------------\nRan 19 tests in 0.115s\n\nOK\n"
+    },
+    {
+      "tool": "fallbackheaders",
+      "exit": 0,
+      "tests": 9,
+      "stdout": "",
+      "stderr": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.017s\n\nOK\n"
+    },
+    {
+      "tool": "headercheck",
+      "exit": 0,
+      "tests": 15,
+      "stdout": "",
+      "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.024s\n\nOK\n"
+    },
+    {
+      "tool": "idcheck",
+      "exit": 0,
+      "tests": 13,
+      "stdout": "",
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 0.261s\n\nOK\n"
+    },
+    {
+      "tool": "keycheck",
+      "exit": 0,
+      "tests": 16,
+      "stdout": "",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.352s\n\nOK\n"
+    },
+    {
+      "tool": "mapcheck",
+      "exit": 0,
+      "tests": 16,
+      "stdout": "",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.165s\n\nOK\n"
+    },
+    {
+      "tool": "multiplecheck",
+      "exit": 0,
+      "tests": 16,
+      "stdout": "",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 1.180s\n\nOK\n"
+    },
+    {
+      "tool": "oauthcheck",
+      "exit": 0,
+      "tests": 16,
+      "stdout": "",
+      "stderr": "................\n----------------------------------------------------------------------\nRan 16 tests in 0.229s\n\nOK\n"
+    },
+    {
+      "tool": "paramcheck",
+      "exit": 0,
+      "tests": 14,
+      "stdout": "",
+      "stderr": "..............\n----------------------------------------------------------------------\nRan 14 tests in 0.026s\n\nOK\n"
+    },
+    {
+      "tool": "schemecheck",
+      "exit": 0,
+      "tests": 11,
+      "stdout": "",
+      "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.345s\n\nOK\n"
+    },
+    {
+      "tool": "servercheck",
+      "exit": 0,
+      "tests": 15,
+      "stdout": "",
+      "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.301s\n\nOK\n"
+    },
+    {
+      "tool": "statuscheck",
+      "exit": 0,
+      "tests": 22,
+      "stdout": "",
+      "stderr": "......................\n----------------------------------------------------------------------\nRan 22 tests in 0.072s\n\nOK\n"
+    },
+    {
+      "tool": "tuplecheck",
+      "exit": 0,
+      "tests": 14,
+      "stdout": "",
+      "stderr": "..............\n----------------------------------------------------------------------\nRan 14 tests in 0.356s\n\nOK\n"
+    },
+    {
+      "tool": "uniquecheck",
+      "exit": 0,
+      "tests": 10,
+      "stdout": "",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.282s\n\nOK\n"
+    }
+  ],
+  "demo": {
+    "schema": "apidelta-report-v1",
+    "perspective": "existing clients upgrading to the new description",
+    "status": "breaking",
+    "counts": {
+      "breaking": 1,
+      "review": 1,
+      "info": 0
+    },
+    "operations_compared": 5,
+    "findings": [
+      {
+        "severity": "review",
+        "code": "document_metadata_changed",
+        "location": "/",
+        "message": "Document metadata, components or extensions changed; review anything not covered by specific findings."
+      },
+      {
+        "severity": "breaking",
+        "code": "schema_enum_incompatible",
+        "location": "/paths/~1openapi.json/get/responses/200/content/application~1json/schema/prefixItems/1/enum",
+        "message": "Response enum can contain formerly excluded values."
+      }
+    ],
+    "limits": "Static conservative subset analysis, not a full OpenAPI validator or proof of runtime compatibility. Review findings are unresolved.",
+    "extension": "tuplecheck-v1 (includes keycheck and earlier analyzers)",
+    "tuple_pairs": [
+      {
+        "location": "/paths/~1openapi.json/get/responses/200/content/application~1json/schema/prefixItems/0",
+        "direction": "response",
+        "index": 0,
+        "old_source": "prefixItems",
+        "new_source": "prefixItems"
+      },
+      {
+        "location": "/paths/~1openapi.json/get/responses/200/content/application~1json/schema/prefixItems/1",
+        "direction": "response",
+        "index": 1,
+        "old_source": "prefixItems",
+        "new_source": "prefixItems"
+      },
+      {
+        "location": "/paths/~1openapi.json/get/responses/200/content/application~1json/schema/tupleTail",
+        "direction": "response",
+        "index": null,
+        "old_source": "items",
+        "new_source": "items"
+      }
+    ],
+    "key_pairs": [],
+    "map_pairs": [],
+    "dispatch_pairs": [],
+    "schema_visits": 365,
+    "selector_groups": [],
+    "status_visits": 2500,
+    "remapped_header_pairs": 0,
+    "tuple_scope": "OpenAPI 3.1 effective prefix positions and homogeneous items tail. Potential position-level breaks, not whole-array implication. Length, contains, unevaluatedItems, composition and reachability are not solved. All inherited findings are retained, including raw items comparisons when prefix lengths differ.",
+    "capture_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+    "baseline_source": "https://api.imd.fun/openapi.json",
+    "demo": "Saved real IMD operation, hypothetically using an OpenAPI 3.1 response tuple. Only a referenced position enum expands. Not an observed service change; no API operation called."
+  },
+  "unchanged_capture": {
+    "schema": "apidelta-report-v1",
+    "perspective": "existing clients upgrading to the new description",
+    "status": "no_detected_breakage",
+    "counts": {
+      "breaking": 0,
+      "review": 0,
+      "info": 0
+    },
+    "operations_compared": 5,
+    "findings": [],
+    "limits": "Static conservative subset analysis, not a full OpenAPI validator or proof of runtime compatibility. Review findings are unresolved.",
+    "extension": "tuplecheck-v1 (includes keycheck and earlier analyzers)",
+    "tuple_pairs": [],
+    "key_pairs": [],
+    "map_pairs": [],
+    "dispatch_pairs": [],
+    "schema_visits": 371,
+    "selector_groups": [],
+    "status_visits": 2500,
+    "remapped_header_pairs": 0,
+    "tuple_scope": "OpenAPI 3.1 effective prefix positions and homogeneous items tail. Potential position-level breaks, not whole-array implication. Length, contains, unevaluatedItems, composition and reachability are not solved. All inherited findings are retained, including raw items comparisons when prefix lengths differ."
+  },
+  "capture_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+  "independent_tuple_oracle_cases": 512,
+  "suite_scratch_policy": "TemporaryDirectory redirected to test/scratch; source tests unchanged",
+  "live": {
+    "source": "https://api.imd.fun/openapi.json",
+    "user_agent": "Pepeolithic-TupleCheck/39.0",
+    "bytes": 23132,
+    "sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+    "matches_capture": true,
+    "comparison": {
+      "schema": "apidelta-report-v1",
+      "perspective": "existing clients upgrading to the new description",
+      "status": "no_detected_breakage",
+      "counts": {
+        "breaking": 0,
+        "review": 0,
+        "info": 0
+      },
+      "operations_compared": 5,
+      "findings": [],
+      "limits": "Static conservative subset analysis, not a full OpenAPI validator or proof of runtime compatibility. Review findings are unresolved.",
+      "extension": "tuplecheck-v1 (includes keycheck and earlier analyzers)",
+      "tuple_pairs": [],
+      "key_pairs": [],
+      "map_pairs": [],
+      "dispatch_pairs": [],
+      "schema_visits": 371,
+      "selector_groups": [],
+      "status_visits": 2500,
+      "remapped_header_pairs": 0,
+      "tuple_scope": "OpenAPI 3.1 effective prefix positions and homogeneous items tail. Potential position-level breaks, not whole-array implication. Length, contains, unevaluatedItems, composition and reachability are not solved. All inherited findings are retained, including raw items comparisons when prefix lengths differ."
+    }
+  }
+}

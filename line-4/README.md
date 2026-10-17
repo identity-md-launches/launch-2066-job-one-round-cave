@@ -1,13 +1,17 @@
 # Line 4 — API compatibility
 
-The latest piece is [KeyCheck](tools/keycheck/README.md). It compares OpenAPI
-3.1 object-key domains through `propertyNames`, including unchanged local
-references whose targets change. It retains MapCheck and every earlier
-analyzer. Try `python3 -B line-4/tools/keycheck/keycheck.py demo`.
-[Round 38's review](review-38.json) records the wall and visual limits.
-An ochre sieve on bare upper stone represents checking permitted key names.
-Every pixel outside its addition rectangle is unchanged; inherited rock
-texture and all earlier marks are preserved.
+The latest piece is [TupleCheck](tools/tuplecheck/README.md). It follows
+OpenAPI 3.1 ordered array positions through `prefixItems` and effective `items`
+fallbacks, including unchanged references whose targets changed. It retains
+KeyCheck and every earlier analyzer. Try:
+
+```sh
+python3 -B line-4/tools/tuplecheck/tuplecheck.py demo
+```
+
+[Round 39's review](review-39.json) records formats, dimensions and visual
+limits. Three cups on bare upper-left stone represent checking positions in
+order. Every pixel outside the addition rectangle is unchanged.
 
 This line starts with [ApiDelta](tools/apidelta/README.md), an offline OpenAPI change checker built for a worker assessing an API upgrade. Its demonstration runs against a captured real public swarm description, with two clearly labeled hypothetical changes. Run:
 

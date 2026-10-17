@@ -1,0 +1,38 @@
+{
+  "ancestor_sha256": "2e4bca0e6853984492f1da6d8f64711bd7921eecb88814eec4a079c99bbb9cfe",
+  "sha256": "9ec8612af3254566e18b8fb7cc50babc1b45d3cc6368734189319b076dc34a22",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "RGB PNG",
+  "wall": "artifacts/line-4/wall-v20.png",
+  "canonical_wall": "artifacts/line-4/wall.png",
+  "preview": "dist/line-4/39.jpg",
+  "preview_format": "JPEG",
+  "preview_dimensions": [
+    512,
+    512
+  ],
+  "preview_bytes": 88298,
+  "addition_bounds": [
+    150,
+    210,
+    210,
+    65
+  ],
+  "changed_pixels": 3541,
+  "pixels_changed_outside_addition": 0,
+  "png_roundtrip_passed": true,
+  "method": "Installed image tool generated isolated pigment on white. White discarded; selected strokes mapped to ochre and charcoal and blended onto exact inherited stone.",
+  "visual_review": "Inspected full PNG and 512px JPEG: inherited Pepe retains wide mouth and heavy-lidded eyes. Counted four fingers and one thumb on each inherited hand, five digits each. No new hands or stencils. No writing, logos, borders, real people or prohibited symbols observed. Rock, cracks, framing, lighting and ancestral pigment retained.",
+  "unmet_visual_requirements": [
+    "Inherited rock texture remains photographic in detail; retained to preserve the existing wall."
+  ],
+  "prompt_record": "line-4/MARK-39.md",
+  "limitations": [
+    "Small cups and stone shapes soften at 512px; earth-pigment mapping compresses color distinctions.",
+    "Local review and checks are observations, not independent visual approval."
+  ],
+  "image_tool": "Installed mcp image generator; isolated pigment generation followed by local compositing."
+}

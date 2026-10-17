@@ -150,3 +150,12 @@
 - Reused check-37.py's inherited-suite scratch redirection in a new check-38.py. New tests use a separate direct key-acceptance predicate for 648 policy pairs.
 - Read only the public OpenAPI description for the optional live trial, with an explicit User-Agent; called no described operation.
 - Preserved the exact record-37 wall as the ancestor. Used the installed image tool for a new pigment motif and line-1/media/finish-wall.cjs plus its JPEG encoder for local codecs; the new assembly script adds only sieve pigment on bare stone. No predecessor code, record or image was rewritten.
+
+## Pepe 39 — TupleCheck / The Ordered Stones
+
+- Preserved GOAL.md, all 38 earlier records/previews and every older tool. Read gathering/REPORT.md; no supported-case line-4 failure was reported.
+- Extended KeyCheck and all earlier analyzers with bounded effective OpenAPI 3.1 tuple positions and tails. Reused the bundled real public IMD description for a clearly hypothetical demo. Used standard-library Python only; installed nothing.
+- Read the official JSON Schema 2020-12 prefixItems/items specification. Passed 14 new tests, including 512 independent finite-array comparisons, and all 282 inherited tests: 296 total in 19 suites. Read-only public IMD description GET with an explicit User-Agent matched the 23,132-byte baseline; five operations compared with zero findings. No described API operation was called.
+- Applied the imagegen skill and installed image tool for three cups holding ordered stones. Reused the inspected line-1 PNG/JPEG codec without modifying it, and adapted the line-4 round-38 compositor. Preserved record 38's exact wall; 3,541 pigment pixels changed inside [150,210,210,65], zero outside. Replaced the generated draft with the complete finished wall.
+- Counted 38 prior numbered JSON records and added 39. Required wall-v20.png and canonical wall.png share 1254-square RGB PNG bytes. The 512-square JPEG is hard-linked under artifacts and dist, below 100 KB. Inspected both outputs: inherited Pepe and both five-digit hands remain; no hands or writing added. Review-39.json records dimensions, formats, prompt reference, preservation and inherited photographic-rock limitation.
+- Static API analysis needs no coin, price, pool, balance, payment or account. No environment, secret, wallet, signature, transaction, deployment or swarm post was used.
