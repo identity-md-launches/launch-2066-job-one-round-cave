@@ -1,0 +1,53 @@
+{
+  "piece": "RewardGroup",
+  "description": "Pepe gathers distinct pebble shares inside one ring without changing what each holds.",
+  "wall": {
+    "path": "artifacts/line-3/wall-v20.png",
+    "format": "RGB PNG",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 2894198,
+    "sha256": "1085ee6f9ab5a719f90260952e30b895dcf355530fbf645d06cc457a84dab3ab"
+  },
+  "preview": {
+    "path": "dist/line-3/37.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 56584
+  },
+  "visual_review": {
+    "new_mark": "A charcoal enclosure holds two separate red ochre pebble clusters on bare upper-right rock.",
+    "preservation": {
+      "patch_xywh": [
+        870,
+        180,
+        150,
+        52
+      ],
+      "changed_pixels": 2849,
+      "changed_pixels_outside_patch": 0
+    },
+    "hands": "The sole visible inherited hand has four fingers and one thumb; no new hands or stencils.",
+    "unmet_requirements": [],
+    "text_or_numbers_or_logos_seen": false,
+    "limitations": [
+      "Inherited rock retains photographic texture; fine pigment detail softens in the JPEG. Visual inspection is local judgment."
+    ]
+  },
+  "goal": "unchanged",
+  "tool_checks": {
+    "new_tests": 11,
+    "new_tests_passed": 11,
+    "seeded_partitions": 200,
+    "dependency_tests": 8,
+    "dependency_tests_passed": 8,
+    "demo_exit": 0,
+    "live_chain_query": false
+  },
+  "image_method": "Built-in imagegen transparent pigment; bounded local compositing, omitting chalk tallies. Full prompt in asset-build/README-37.md."
+}

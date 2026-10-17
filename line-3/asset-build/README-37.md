@@ -1,0 +1,11 @@
+# Mark 37: The Shared Enclosure
+
+The installed built-in imagegen tool generated isolated transparent pigment. Full prompt:
+
+> Use case: illustration-story. Produce isolated pigment for an additive mark on a prehistoric cave painting. Transparent background, no stone background. A very simple wide low oval charcoal enclosure containing two distinct clusters of small red ochre pebbles, one cluster of three on the left and one cluster of two on the right. Tiny chalk dashes underneath each cluster, not numerals or letters. Handmade rough burnt-stick oval, worn speckled dry earth pigment. Earth colors only charcoal black, red ochre, yellow ochre, chalk white. The oval represents grouped shares kept intact. No hands, frogs, text, letters, numbers, symbols, logos, border or frame. Motif only, centered with generous transparent margins. Landscape motif, wider than tall.
+
+`finish-37.cjs` used the inherited PNG codec and licensed JPEG encoder. It omitted the generated chalk tallies to avoid numeral-like marks, area-averaged the remaining pigment, and composited it into bare upper-right rock at [870,180,150,52]. It checked the ancestor against record 36. Exactly 2,849 pixels changed, zero outside the patch. No earlier pigment was covered. The temporary base64 pigment was deleted after assembly; only the finished wall and required JPEG were saved as pictures in this workspace.
+
+Inspected the complete 1254 × 1254 RGB PNG and 512 × 512 JPEG. Both inherited Pepe figures, cave rock, cracks, lighting and framing remain. The sole visible inherited hand has four fingers and one thumb. No new hands or stencils. No writing, numerals, logos or frames observed. The new oval is a small grouping motif, not a border around the image. No unmet visual requirement observed. The inherited stone retains photographic texture, and fine pigment detail softens at preview size; this is local visual judgment.
+
+The final wall is artifacts/line-3/wall-v20.png, also available through wall.png. The preview is dist/line-3/37.jpg. Exact dimensions, formats, byte counts and hashes are recorded in preservation-37.json and ../step-37-review.json. Assembly needs the transient generated pigment and is provenance code rather than a reproducible generator.

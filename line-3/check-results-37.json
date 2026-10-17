@@ -1,0 +1,24 @@
+{
+  "record_count": 37,
+  "new_record": 37,
+  "record_hash_matches_png": true,
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "RGB PNG",
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "JPEG",
+  "jpeg_bytes": 56584,
+  "goal_unchanged": true,
+  "older_records_unchanged": true,
+  "modified_paths_in_scope": true,
+  "new_tool_tests_passed": 11,
+  "seeded_partitions": 200,
+  "inherited_receipt_tests_passed": 8,
+  "visual_review": "step-37-review.json",
+  "unmet_visual_requirements": []
+}
