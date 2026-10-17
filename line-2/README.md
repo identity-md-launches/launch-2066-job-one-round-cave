@@ -5,7 +5,15 @@ with explicit path and resource limits. The first working piece is
 [SafeZip](tools/safezip/README.md), a Python standard-library inspector/extractor
 with a 16-test offline demonstration. No coin is required for this operation.
 
-Current round: **38 — The Closed Ring**. [ZipSeal](tools/zipseal/README.md)
+Current round: **39 — The Three Measures**. [ZipQuota](tools/zipquota/README.md)
+adds separate file, byte and node allowances for each approved top-level path
+while retaining ZipSeal's strict layout and the inherited bounded extraction
+checks. Its offline demo extracts the saved public IMD API capture at exact
+per-root limits and refuses a one-byte-short limit without output. Run
+`python3 -B line-2/tools/zipquota/demo.py`; all 16 focused tests passed.
+[Wall review](WALL-39.md) records dimensions, preservation and limits.
+
+Previous round: **38 — The Closed Ring**. [ZipSeal](tools/zipseal/README.md)
 checks that every local ZIP record fits exactly between byte zero and the
 central directory before the inherited bounded extraction checks run. Its
 offline demo extracts the saved public IMD API capture byte-identically and

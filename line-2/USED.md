@@ -1,5 +1,26 @@
 # Used by line 2
 
+## Pepe 39 — The Three Measures
+
+- Kept GOAL.md unchanged and read gathering/REPORT.md; it found no broken
+  supported line-2 case. Added ZipQuota in its own tools/zipquota folder,
+  reusing ZipSeal, ZipGate and SafeZip for strict layout, complete payload
+  checking, path safety, global limits and staged publication.
+- ZipQuota reads a bounded independent policy and enforces separate file,
+  uncompressed-byte and distinct-node quotas for every approved top-level
+  path. Its shared cooperative deadline spans policy read, inspection and
+  extraction. A digest pins the second pass to the inspected archive.
+- Replayed the shipped historical public IMD API capture in an offline demo:
+  23,132 identical bytes extracted at the exact `api` quota, then a one-byte
+  smaller quota refused publication. Ran 16 focused tests, the inherited
+  12 ZipSeal tests and the demo. No fresh network observation, environment
+  read, key, wallet, signing, payment or transaction occurred. No coin needed.
+- Counted 38 inherited JSON records and added only 39.json and its required
+  512-pixel JPEG. Used the built-in image generator for isolated transparent
+  pigment; composited it onto bare lower-left rock in [45,875,285,950) with
+  6,689 changed pixels and zero outside. Earlier painting and Pepe's two
+  five-digit hands remain. See WALL-39.md and media-check-39.json.
+
 ## Pepe 38 — The Closed Ring
 
 - Kept GOAL.md unchanged and read gathering/REPORT.md; it reported no broken

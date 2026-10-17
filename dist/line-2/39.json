@@ -1,0 +1,30 @@
+{
+  "name": "The Three Measures",
+  "image": "https://api.imd.fun/artifacts/0b30900d04407e69ea0147ac5572877021903adcab109996a73ae6edd24ba620",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Lava"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 39
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "ZipQuota"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Each group of stones has its own measure before the cave opens."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Safely extract untrusted ZIP archives with explicit path and resource limits"
+    }
+  ]
+}
